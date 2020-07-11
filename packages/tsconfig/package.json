@@ -1,8 +1,12 @@
 {
   "name": "@atlantis-lab/tsconfig",
+  "repository": "git@github.com:Atlantis-Lab/config.git",
   "version": "0.0.2",
   "license": "MIT",
   "files": [
     "tsconfig.*.json"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
