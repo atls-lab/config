@@ -21,3 +21,12 @@ jobs:
 
       - name: Install
         run: yarn install
+
+      - name: Build
+        run: yarn build
+
+      - name: Typecheck
+        run: yarn typecheck
+
+      - name: Lint
+        run: yarn lint
