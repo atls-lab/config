@@ -15,25 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
           ref: master
-        if: >
-          github.event.pull_request.merged == true &&
-          github.event.pull_request.base.ref == 'master' &&
-          !startsWith(github.event.pull_request.head.ref, 'renovate/')
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14'
-          registry-url: 'https://npm.pkg.github.com'
-        if: >
-          github.event.pull_request.merged == true &&
-          github.event.pull_request.base.ref == 'master' &&
-          !startsWith(github.event.pull_request.head.ref, 'renovate/')
-
-      - name: Install
-        run: yarn install
         if: >
           github.event.pull_request.merged == true &&
           github.event.pull_request.base.ref == 'master' &&
@@ -41,7 +23,7 @@ jobs:
 
       - name: Configure GPG Key
         run: |
-          mkdir -p ~/.gnupg/
+          mkdir -p ~/.gnupg/s
           printf "$GPG_SIGNING_KEY" | base64 --decode > ~/.gnupg/private.key
           gpg --import ~/.gnupg/private.key
         env:
@@ -51,7 +33,7 @@ jobs:
           github.event.pull_request.base.ref == 'master' &&
           !startsWith(github.event.pull_request.head.ref, 'renovate/')
 
-      - name: Configure Git User
+      - name: Configure Git
         run: |
           git config --local user.email $GIT_EMAIL
           git config --local user.name $GIT_USER
@@ -66,12 +48,25 @@ jobs:
           github.event.pull_request.base.ref == 'master' &&
           !startsWith(github.event.pull_request.head.ref, 'renovate/')
 
+      - name: Set NPM Registry
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+          registry-url: 'https://npm.pkg.github.com'
+        if: >
+          github.event.pull_request.merged == true &&
+          github.event.pull_request.base.ref == 'master' &&
+          !startsWith(github.event.pull_request.head.ref, 'renovate/')
+
+      - name: Install
+        run: yarn install
+        if: >
+          github.event.pull_request.merged == true &&
+          github.event.pull_request.base.ref == 'master' &&
+          !startsWith(github.event.pull_request.head.ref, 'renovate/'
+
       - name: Release
-        run: |
-          yarn lerna version --no-git-tag-version --yes
-          git add .
-          git commit -m 'chore(release): %s'
-          git push
+        run: yarn lerna version --yes
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         if: >
@@ -88,7 +83,7 @@ jobs:
           github.event.pull_request.base.ref == 'master'
           !startsWith(github.event.pull_request.head.ref, 'renovate/')
 
-      - name: Github Registry
+      - name: Set Github Registry
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
