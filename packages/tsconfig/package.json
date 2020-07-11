@@ -1,7 +1,7 @@
 {
   "name": "@atlantis-lab/tsconfig",
   "repository": "git@github.com:Atlantis-Lab/config.git",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "files": [
     "tsconfig.*.json"
