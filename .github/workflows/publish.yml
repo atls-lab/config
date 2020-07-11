@@ -67,7 +67,11 @@ jobs:
           !startsWith(github.event.pull_request.head.ref, 'renovate/')
 
       - name: Release
-        run: yarn lerna version --yes
+        run: |
+          yarn lerna version --no-git-tag-version --yes
+          git add .
+          git commit -m 'chore(release): %s'
+          git push
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         if: >
