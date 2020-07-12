@@ -21,7 +21,7 @@
     "typescript": "3.9.6"
   },
   "dependencies": {
-    "@atlantis-lab/prettier-plugin-import-sort": "0.0.1"
+    "@atlantis-lab/prettier-plugin-import-sort": "0.0.6"
   },
   "publishConfig": {
     "access": "public"
