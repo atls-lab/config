@@ -1,7 +1,7 @@
 {
   "name": "@atlantis-lab/config",
   "repository": "git@github.com:Atlantis-Lab/config.git",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -24,11 +24,11 @@
     "typescript": "3.9.6"
   },
   "dependencies": {
-    "@atlantis-lab/commitlint-config": "*",
-    "@atlantis-lab/eslint-config": "*",
-    "@atlantis-lab/jest-config": "*",
-    "@atlantis-lab/prettier-config": "*",
-    "@atlantis-lab/tsconfig": "*"
+    "@atlantis-lab/commitlint-config": "0.0.2",
+    "@atlantis-lab/eslint-config": "0.0.6",
+    "@atlantis-lab/jest-config": "0.0.4",
+    "@atlantis-lab/prettier-config": "0.0.14",
+    "@atlantis-lab/tsconfig": "0.0.19"
   },
   "publishConfig": {
     "access": "public"
