@@ -1,4 +1,4 @@
-import prettierConfig from '@monstrs/prettier-config'
+import prettierConfig from '@atlantis-lab/prettier-config'
 
 export const config = {
   extends: ['airbnb-typescript', 'prettier/react', 'plugin:prettier/recommended'],
