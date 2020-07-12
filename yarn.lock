@@ -12,11 +12,6 @@
     import-sort-style "^6.0.0"
     prettier "^2.0.5"
 
-"@atlantis-lab/tsconfig@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@atlantis-lab/tsconfig/-/tsconfig-0.0.8.tgz#f40addc8a2ebb208c34bfe2640610b0640b42259"
-  integrity sha512-bSXrMkn9uNyXgcjDtADTnoHbsVhrJ8tBb6RUU7dU8yzEUxXkWpXtS/ACclASwcIyfiMbkBYH+JDrC/nALhDBYw==
-
 "@babel/code-frame@^7.0.0":
   version "7.10.1"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.1.tgz#d5481c5095daa1c57e16e54c6f9198443afb49ff"
