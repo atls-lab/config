@@ -1,7 +1,7 @@
 {
   "name": "@atlantis-lab/eslint-config",
   "repository": "git@github.com:Atlantis-Lab/config.git",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -17,7 +17,7 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@atlantis-lab/prettier-config": "0.0.10",
+    "@atlantis-lab/prettier-config": "0.0.11",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
     "eslint-config-airbnb-typescript": "6.3.2",
