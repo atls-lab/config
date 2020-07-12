@@ -6,6 +6,7 @@
     "build": "lerna run build"
   },
   "devDependencies": {
+    "@atlantis-lab/tsconfig": "^0.0.8",
     "husky": "4.2.5",
     "lerna": "3.22.1",
     "typescript": "3.9.6"
