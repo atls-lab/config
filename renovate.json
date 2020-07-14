@@ -1,6 +1,6 @@
 {
   "extends": ["config:base"],
   "labels": ["dependencies"],
-  "schedule": ["after 9am every weekday", "before 12am every weekday"],
+  "schedule": ["after 6am every weekday", "before 9am every weekday"],
   "automerge": true
 }
