@@ -11,6 +11,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## 0.0.9 (2020-08-13)
+
+**Note:** Version bump only for package @atlantis-lab/eslint-config
+
+
+
+
+
 ## 0.0.8 (2020-07-17)
 
 **Note:** Version bump only for package @atlantis-lab/eslint-config
