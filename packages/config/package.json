@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@atlantis-lab/commitlint-config": "0.0.5",
-    "@atlantis-lab/eslint-config": "0.0.9",
+    "@atlantis-lab/eslint-config": "0.0.8",
     "@atlantis-lab/jest-config": "0.0.7",
     "@atlantis-lab/prettier-config": "0.0.17",
     "@atlantis-lab/tsconfig": "0.0.22"
