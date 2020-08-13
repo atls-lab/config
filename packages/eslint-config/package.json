@@ -1,7 +1,7 @@
 {
   "name": "@atlantis-lab/eslint-config",
   "repository": "git@github.com:Atlantis-Lab/config.git",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -27,9 +27,9 @@
     "eslint-plugin-react": "7.17.0"
   },
   "devDependencies": {
+    "@atlantis-lab/prettier-config": "0.0.17",
     "@types/node": "14.0.25",
-    "typescript": "3.9.7",
-    "@atlantis-lab/prettier-config": "*"
+    "typescript": "3.9.7"
   },
   "peerDependencies": {
     "@atlantis-lab/prettier-config": "*",
