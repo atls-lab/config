@@ -18,7 +18,7 @@
   "dependencies": {
     "jest-emotion": "10.0.26",
     "jest-static-stubs": "0.0.1",
-    "ts-jest": "24.2.0"
+    "ts-jest": "24.3.0"
   },
   "devDependencies": {
     "@types/node": "14.0.25",
