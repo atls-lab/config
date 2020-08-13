@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@atlantis-lab/prettier-config@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@atlantis-lab/prettier-config/-/prettier-config-0.0.16.tgz#61a83543d06578fa7f2840ff634495638d30b9a0"
+  integrity sha512-aWEVvDkTk3rxjOcAzMIugeyv5W4HbmlCYrEz17O/23mlwAqp5OTyKlOVmtD0mOPHhN3HQuNvNGlSF3ExdsFbQA==
+  dependencies:
+    "@atlantis-lab/prettier-plugin-import-sort" "0.0.6"
+
 "@atlantis-lab/prettier-plugin-import-sort@0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@atlantis-lab/prettier-plugin-import-sort/-/prettier-plugin-import-sort-0.0.6.tgz#db406c2118cdf59e2a6a7a8d171b0c2f5e78f6e5"
