@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2020-08-14)
+
+
+### Features
+
+* init ([45ac450](https://github.com/Atlantis-Lab/config/commit/45ac45015059dbd7f70b29e4b324fc7a06b315c7))
+
+
+
+
+
 ## 0.0.5 (2020-08-13)
 
 **Note:** Version bump only for package @atlantis-lab/config

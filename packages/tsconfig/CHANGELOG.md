@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2020-08-14)
+
+
+### Bug Fixes
+
+* add missing fields in package ([d107e38](https://github.com/Atlantis-Lab/config/commit/d107e38a844240509d5e5d2b1ef7d606dec65ea3))
+
+
+### Features
+
+* init ([e2a2f83](https://github.com/Atlantis-Lab/config/commit/e2a2f83b692a342f16fe9b0d1902e97135c24803))
+
+
+
+
+
 ## 0.0.23 (2020-08-13)
 
 **Note:** Version bump only for package @atlantis-lab/tsconfig

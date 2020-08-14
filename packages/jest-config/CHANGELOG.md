@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2020-08-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ts-jest to v26.1.2 ([19b049e](https://github.com/Atlantis-Lab/config/commit/19b049e1a02d81acb165b5ee9371cc1fc0d701e7))
+* **deps:** update dependency ts-jest to v26.1.3 ([407f7ad](https://github.com/Atlantis-Lab/config/commit/407f7ad929e374382077988728b24e7f75afda61))
+
+
+### Features
+
+* init ([c17cd83](https://github.com/Atlantis-Lab/config/commit/c17cd83d0544d28f15e7a6ccbf163f7d50dbba6d))
+
+
+
+
+
 ## 0.0.8 (2020-08-13)
 
 **Note:** Version bump only for package @atlantis-lab/jest-config

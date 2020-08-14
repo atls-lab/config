@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2020-08-14)
+
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to v9 ([3fdd5b4](https://github.com/Atlantis-Lab/config/commit/3fdd5b40b52e592f1c92d6a43c35183605e5624d))
+* **deps:** update commitlint monorepo to v9.1.1 ([7dd571c](https://github.com/Atlantis-Lab/config/commit/7dd571c1998f1effc4bcd441c5f35848213f98bf))
+
+
+### Features
+
+* init ([cae134a](https://github.com/Atlantis-Lab/config/commit/cae134ae17288903871aa8c4fd3d69a51027c8ba))
+
+
+
+
+
 ## 0.0.6 (2020-08-13)
 
 **Note:** Version bump only for package @atlantis-lab/commitlint-config
