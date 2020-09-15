@@ -1,7 +1,7 @@
 {
   "name": "@atlantis-lab/prettier-plugin-import-sort",
   "repository": "git@github.com:Atlantis-Lab/config.git",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "source": "src/index.ts",
