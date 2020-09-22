@@ -20,7 +20,7 @@
     "@commitlint/config-lerna-scopes": "8.2.0"
   },
   "devDependencies": {
-    "@types/node": "14.0.25",
+    "@types/node": "14.11.2",
     "typescript": "3.9.7"
   },
   "publishConfig": {
