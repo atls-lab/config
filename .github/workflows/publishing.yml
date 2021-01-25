@@ -1,0 +1,67 @@
+name: Publishing
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+
+jobs:
+  publishing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Configure GPG Key
+        run: |
+          mkdir -p ~/.gnupg/s
+          printf "$GPG_SIGNING_KEY" | base64 --decode > ~/.gnupg/private.key
+          gpg --import ~/.gnupg/private.key
+        env:
+          GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
+
+      - name: Configure Git
+        run: |
+          git config --local user.email $GIT_EMAIL
+          git config --local user.name $GIT_USER
+          git config --local user.signingkey $GPG_KEY_ID
+          git config --local commit.gpgsign true
+        env:
+          GIT_USER: ${{ secrets.GIT_USER }}
+          GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID}}
+
+      - name: Set NPM Registry
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          registry-url: 'https://registry.npmjs.org'
+          scope: ${{ secrets.SCOPE }}
+
+      - name: Install
+        run: yarn install
+
+      - name: Release
+        run: yarn lerna version --yes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Publish to NPM
+        run: yarn lerna publish from-package --no-verify-access --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Set Github Registry
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: ${{ secrets.SCOPE }}
+
+      - name: Publish to Github Registry
+        run: yarn lerna publish from-package --no-verify-access --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
