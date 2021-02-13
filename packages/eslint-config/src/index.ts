@@ -1,6 +1,6 @@
 import prettierConfig from '@atlantis-lab/prettier-config'
 
-export const config = {
+const config = {
   extends: ['airbnb-typescript', 'prettier/react', 'plugin:prettier/recommended'],
   env: {
     node: true,
@@ -28,3 +28,5 @@ export const config = {
     '@typescript-eslint/indent': 0,
   },
 }
+
+export default config
