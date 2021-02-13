@@ -1,4 +1,4 @@
-export const config = {
+const config = {
   rootDir: process.cwd(),
   coverageDirectory: '<rootDir>/coverage',
   collectCoverageFrom: ['**/*.{js,jsx,ts,tsx}', '!**/*.d.ts'],
@@ -18,3 +18,4 @@ export const config = {
   },
 }
 
+export default config
