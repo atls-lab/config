@@ -27,6 +27,9 @@ const config = {
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/indent': 0,
   },
+  parserOptions: {
+    project: ["./tsconfig.json"]
+  }
 }
 
 module.exports = {
