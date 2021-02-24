@@ -3,7 +3,7 @@ const config = {
   singleQuote: true,
   tabWidth: 2,
   jsxSingleQuote: true,
-  trailingComma: 'es5',
+  trailingComma: 'all',
   pluginSearchDirs: [process.cwd()],
   printWidth: 100,
 };
