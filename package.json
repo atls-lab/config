@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@atlantis-lab/tsconfig": "*",
-    "husky": "4.3.0",
+    "husky": "4.3.8",
     "lerna": "3.22.1",
     "typescript": "4.0.3"
   },
