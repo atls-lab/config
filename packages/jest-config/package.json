@@ -16,7 +16,7 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "jest-emotion": "10.0.32",
+    "jest-emotion": "11.0.0",
     "jest-static-stubs": "0.0.1",
     "ts-jest": "26.4.1"
   },
