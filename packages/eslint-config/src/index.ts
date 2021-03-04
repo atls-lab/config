@@ -1,7 +1,7 @@
 import prettierConfig from '@atlantis-lab/prettier-config'
 
 const config = {
-  extends: ['airbnb-typescript', 'prettier/react', 'plugin:prettier/recommended'],
+  extends: ['airbnb-typescript', 'plugin:prettier/recommended'],
   env: {
     node: true,
     browser: true,
