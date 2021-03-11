@@ -33,7 +33,7 @@
   },
   "peerDependencies": {
     "@atlantis-lab/prettier-config": "*",
-    "eslint": ">=7.x"
+    "eslint": "<=7.19.0"
   },
   "publishConfig": {
     "access": "public"
