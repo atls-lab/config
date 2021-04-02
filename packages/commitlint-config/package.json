@@ -16,7 +16,7 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "11.0.0",
+    "@commitlint/config-conventional": "12.1.1",
     "@commitlint/config-lerna-scopes": "11.0.0"
   },
   "devDependencies": {
